@@ -8,5 +8,10 @@ namespace PROYECTO3_1
 {
     class Empleados
     {
+        string codigo;
+        string nombre;
+
+        public string Codigo { get => codigo; set => codigo = value; }
+        public string Nombre { get => nombre; set => nombre = value; }
     }
 }

@@ -53,6 +53,12 @@
     </Compile>
     <Compile Include="Bodega.cs" />
     <Compile Include="Clientes.cs" />
+    <Compile Include="DatoClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatoClientes.Designer.cs">
+      <DependentUpon>DatoClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Empleados.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -71,6 +77,9 @@
     <Compile Include="Ventas.cs" />
     <EmbeddedResource Include="Agregar productos nuevos.resx">
       <DependentUpon>Agregar productos nuevos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatoClientes.resx">
+      <DependentUpon>DatoClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

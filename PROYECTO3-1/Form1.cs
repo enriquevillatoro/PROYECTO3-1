@@ -31,5 +31,11 @@ namespace PROYECTO3_1
         {
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            //crear cuenta
+            string 
+        }
     }
 }
