@@ -15,7 +15,7 @@ namespace PROYECTO3_1
         List<Clientes> N = new List<Clientes>();
         public DatoClientes()
         {
-            InitializeComponent();
+            InitializeComponent();//prueba
         }
 
         private void button1_Click(object sender, EventArgs e)
