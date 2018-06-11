@@ -228,7 +228,7 @@ namespace PROYECTO3_1
             Ventas vetempor = new Ventas();
             vetempor.Nit1 = textBox1.Text;
             vetempor.Codvendedor = textBox2.Text;
-            vetempor.Fechaventa = Convert.ToDateTime(dateTimePicker1.Text);
+            vetempor.Fechaventa = DateTime.Now;    //Convert.ToDateTime(dateTimePicker1.Text)
 
             decimal sumatotal=0;
             for (int i = 0; i < copia.Count; i++)
@@ -264,6 +264,11 @@ namespace PROYECTO3_1
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+           
         }
     }
     }
