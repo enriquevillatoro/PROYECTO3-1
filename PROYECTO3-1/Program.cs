@@ -16,7 +16,7 @@ namespace PROYECTO3_1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Agregar_productos_nuevos());
+            Application.Run(new Menu());
         }
     }
 }

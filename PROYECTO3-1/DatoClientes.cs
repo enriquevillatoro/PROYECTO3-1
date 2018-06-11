@@ -15,16 +15,16 @@ namespace PROYECTO3_1
         List<Clientes> N = new List<Clientes>();
         public DatoClientes()
         {
-            InitializeComponent();//prueba
+            InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             //guardar datos de clientes
             Clientes esc = new Clientes();
-            esc.Nit = textBox3.Text;
-            esc.Nombre = textBox1.Text;
-            esc.Apellido = textBox2.Text;
+            esc.Nit = textBox1.Text;
+            esc.Nombre = textBox2.Text;
+            esc.Apellido = textBox3.Text;
 
             N.Add(esc);
             string FileName = "clientes.txt";
@@ -33,9 +33,10 @@ namespace PROYECTO3_1
 
             for (int i = 0; i < N.Count; i++)
             {
+                writer.WriteLine(N[i].Nit);
                 writer.WriteLine(N[i].Nombre);
                 writer.WriteLine(N[i].Apellido);
-                writer.WriteLine(N[i].Nit);
+               
             }
             writer.Close();
 
@@ -61,9 +62,10 @@ namespace PROYECTO3_1
             {
                 Clientes V = new Clientes();
 
+                 V.Nit = reader.ReadLine();
                 V.Nombre = reader.ReadLine();
                 V.Apellido = reader.ReadLine();
-                V.Nit = reader.ReadLine();
+               
                 N.Add(V);
 
             }

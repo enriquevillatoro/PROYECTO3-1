@@ -40,5 +40,12 @@ namespace PROYECTO3_1
         {
 
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Menu back = new Menu();
+            back.Show();
+            this.Hide();
+        }
     }
 }

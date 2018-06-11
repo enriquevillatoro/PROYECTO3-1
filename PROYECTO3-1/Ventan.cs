@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PROYECTO3_1
 {
-    class Bodega
+    class Ventan
     {
         string producto;
         int cantidad;
@@ -14,6 +14,6 @@ namespace PROYECTO3_1
 
         public string Producto { get => producto; set => producto = value; }
         public int Cantidad { get => cantidad; set => cantidad = value; }
-        public decimal Precio1 { get => precio; set => precio = value; }
+        public decimal Precio { get => precio; set => precio = value; }
     }
 }

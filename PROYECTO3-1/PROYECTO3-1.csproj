@@ -74,6 +74,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ventan.cs" />
     <Compile Include="Ventas.cs" />
     <EmbeddedResource Include="Agregar productos nuevos.resx">
       <DependentUpon>Agregar productos nuevos.cs</DependentUpon>
