@@ -51,10 +51,10 @@ namespace PROYECTO3_1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "PEDRO" || textBox1.Text == "LUIS")
+            if (textBox4.Text == "PEDRO" || textBox4.Text == "LUIS")
             {
 
-                if (textBox2.Text == "1234" || textBox2.Text == "2222")
+                if (textBox5.Text == "1234" || textBox5.Text == "2222")
                 {
                     Form1 abrir = new Form1();
             abrir.Show();

@@ -18,7 +18,7 @@ namespace PROYECTO3_1
         List<Bodega> BProducto = new List<Bodega>();
         List<Ventas> XP = new List<Ventas>();
         List<Ventan> copia = new List<Ventan>();
-
+        Decimal subtotal; Decimal Vuelto = 0;
         public Form1()
         {
             InitializeComponent();
@@ -175,7 +175,7 @@ namespace PROYECTO3_1
             writer.WriteLine(comboBox1.Text);
             writer.WriteLine(textBox3.Text);
 
-            decimal subtotal;
+            
 
             for (int i = 0; i < inventario.Count; i++)
             {
@@ -227,15 +227,19 @@ namespace PROYECTO3_1
         {
             Ventas vetempor = new Ventas();
             vetempor.Nit1 = textBox1.Text;
-            vetempor.Codvendedor = textBox2.Text;
+            vetempor.Codvendedor = Convert.ToInt16(textBox2.Text);
+            vetempor.Producto2 = comboBox1.Text;
+            
+
             vetempor.Fechaventa = DateTime.Now;    //Convert.ToDateTime(dateTimePicker1.Text)
 
-            decimal sumatotal=0;
-            for (int i = 0; i < copia.Count; i++)
+            
+            /*for (int i = 0; i < copia.Count; i++)
             {
                 sumatotal = sumatotal + copia[i].Precio;
-            }
-            vetempor.Precio = sumatotal;
+            }*/
+            vetempor.Subtotal = subtotal;
+           
             /*for (int i = 0; i < copia.Count; i++)
             {
                 vetempor.Productosavender[i].Producto = copia[i].Producto;
@@ -253,11 +257,15 @@ namespace PROYECTO3_1
 
                 writer6.WriteLine(XP[i].Nit1);
                 writer6.WriteLine(XP[i].Codvendedor);
-                writer6.WriteLine(XP[i].Precio);
+                writer6.WriteLine(XP[i].Producto2);
+                writer6.WriteLine(XP[i].Subtotal);
                 writer6.WriteLine(XP[i].Fechaventa);
 
             }
             writer6.Close();
+            Vuelto = Convert.ToInt16(textBox4.Text) - subtotal;
+            textBox7.Text = Vuelto.ToString();
+
 
         }
 
